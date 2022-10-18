@@ -1,10 +1,12 @@
+import styled from "styled-components";
+
+const StyleNavbar = styled.nav`
 .nav {
     width: 100%;
     height: 97px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    -ms-flex-align: center;
     align-items: center;
 
     &-logo {
@@ -24,8 +26,6 @@
     }
 
     &-links ul {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
 
         li {
@@ -56,7 +56,6 @@
 
                 &:hover {
                     color: #f39c12;
-                    -webkit-transition: all .2s ease-in-out;
                     transition: all .2s ease-in-out;
                 }
             }
@@ -64,13 +63,11 @@
 
         li:hover p::before {
             color: #f39c12;
-            -webkit-transition: all .1s;
             transition: all .1s;
         }
 
         li:hover p::after {
             color: #f39c12;
-            -webkit-transition: all .1s;
             transition: all .1s;
         }
     }
@@ -81,15 +78,7 @@
     .nav {
         position: fixed;
         background-color: #202022;
-        z-index: 9999;
-    }
-
-    .nav .reset {
-        display: none;
-    }
-
-    .nav .reset-responsive {
-        display: block !important;
+        z-index: 100;
     }
 }
 
@@ -151,35 +140,18 @@
             right: 0;
             top: 0;
             width: 100%;
-            display: -webkit-box;
-            display: -ms-flexbox;
             display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            -ms-flex-direction: column;
             flex-direction: column;
-            -webkit-transition: all 1s ease;
             transition: all 1s ease;
             background: #202022;
             padding: 60px 60px;
             margin-top: 0;
-            -webkit-box-align: start;
-            -ms-flex-align: start;
             align-items: flex-start;
 
             ul {
-                display: -webkit-box;
-                display: -ms-flexbox;
                 display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
                 justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
                 align-items: center;
-                -webkit-box-orient: vertical;
-                -webkit-box-direction: normal;
-                -ms-flex-direction: column;
                 flex-direction: column;
                 margin: auto auto auto auto;
 
@@ -238,51 +210,42 @@
     }
 
     .nav .burger-open {
-        -webkit-animation: midToCross 0.7s ease-in-out forwards;
         animation: midToCross 0.7s ease-in-out forwards;
 
         &:before {
-            -webkit-animation: upToCross 0.7s ease-in-out forwards;
             animation: upToCross 0.7s ease-in-out forwards;
         }
 
         &:after {
-            -webkit-animation: botToCross 0.7s ease-in-out forwards;
             animation: botToCross 0.7s ease-in-out forwards;
         }
     }
 
     .nav .burger-closed {
-        -webkit-animation: CrossToMid 0.7s ease-in-out forwards;
         animation: CrossToMid 0.7s ease-in-out forwards;
 
         &:before {
-            -webkit-animation: CrossToUp 0.7s ease-in-out forwards;
             animation: CrossToUp 0.7s ease-in-out forwards;
         }
 
         &:after {
-            -webkit-animation: CrossToBot 0.7s ease-in-out forwards;
             animation: CrossToBot 0.7s ease-in-out forwards;
         }
     }
 
     @keyframes upToCross {
         0% {
-            -webkit-transform: none;
             transform: none;
             top: -8px;
         }
 
         50% {
-            -webkit-transform: none;
             transform: none;
             top: 0;
         }
 
         100% {
             top: 0;
-            -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
         }
     }
@@ -303,20 +266,17 @@
 
     @keyframes botToCross {
         0% {
-            -webkit-transform: none;
             transform: none;
             top: 8px;
         }
 
         50% {
-            -webkit-transform: none;
             transform: none;
             top: 0;
         }
 
         100% {
             top: 0;
-            -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
         }
     }
@@ -324,18 +284,15 @@
     @keyframes CrossToUp {
         0% {
             top: 0;
-            -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
         }
 
         50% {
-            -webkit-transform: none;
             transform: none;
             top: 0;
         }
 
         100% {
-            -webkit-transform: none;
             transform: none;
             top: -8px;
         }
@@ -344,30 +301,27 @@
     @keyframes CrossToBot {
         0% {
             top: 0;
-            -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
         }
 
         50% {
-            -webkit-transform: none;
             transform: none;
             top: 0;
         }
 
         100% {
-            -webkit-transform: none;
             transform: none;
             top: 8px;
         }
     }
 
     .nav .isOpen {
-        -webkit-clip-path: circle(0% at 100% 0%);
         clip-path: circle(0% at 100% 0%);
     }
 
     .nav .isClosed {
-        -webkit-clip-path: circle(150% at 100% 0%);
         clip-path: circle(150% at 100% 0%);
     }
 }
+`;
+export default StyleNavbar;

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import BurgerBtn from "./BurgerBtn";
 import menuItems from "./MenuItems";
+import StyleNavbar from "./StyleNavbar";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -11,6 +12,7 @@ const Navbar = () => {
   }
   return (
     <>
+    <StyleNavbar>
       <nav className="nav">
         {/* <Link to='/'> */}
         <div className="nav-logo">
@@ -33,6 +35,7 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
+      </StyleNavbar>
     </>
   );
 };
