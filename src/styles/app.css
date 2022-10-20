@@ -12,3 +12,19 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+
+html {
+  font-size: 16px;
+  overflow-x: hidden; }
+
+body {
+  background-color: #202022;
+  position: relative;
+  overflow-x: hidden; }
+
+header {
+  height: 100vh;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/portfolio-with-react-22410.appspot.com/o/hero_bk.png?alt=media&token=258f20a3-2d38-49f6-8b24-b10090be31b8");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover; }

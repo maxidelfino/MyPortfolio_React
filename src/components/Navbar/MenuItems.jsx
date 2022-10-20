@@ -16,7 +16,7 @@ const menuItems = [
     },
     {
         id: '/academic-training',
-        title: 'Academic Training',
+        title: 'Formation',
         cName: 'menu4'
     },
     {
