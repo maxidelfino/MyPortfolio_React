@@ -15,7 +15,7 @@ const Projects = () => {
                                 <a href={item.githubLink} target="_blank" rel="noreferrer noopener external">{item.githubIcon} GitHub</a>
                             </div>
                         </div>
-                    </div>        
+                    </div>
                 )
             })}
         </>

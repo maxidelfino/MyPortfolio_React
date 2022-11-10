@@ -20,4 +20,14 @@ const Element2 = () => {
     )
 }
 
-export { Element1, Element2 };
+const Element3 = () => {
+    return (
+        <>
+            <div className="element-3 rellax" data-rellax-speed="1">
+                <img src="assets/parallax/Coding _Two Color.svg" alt="Coding Element"/>
+            </div>
+        </>
+    )
+}
+
+export { Element1, Element2, Element3 };

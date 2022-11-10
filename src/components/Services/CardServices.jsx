@@ -11,7 +11,7 @@ const CardServices = () => {
                         <div className="services__card" key={index}>
                             <div className="services__title">
                                 <h3>{item.title}</h3>
-                                <img src={item.svg} alt={item.alt} />
+                                {item.svg}
                             </div>
                             <p className="services__description">{item.description}</p>
                             <a href={item.link} className="services__btn">{item.linkTitle}</a>

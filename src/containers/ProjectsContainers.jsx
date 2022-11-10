@@ -1,5 +1,4 @@
 import React from 'react'
-import { Preview } from '../components/Icons/Icons'
 import Projects from '../components/Projects/Projects'
 
 const ProjectsContainers = () => {

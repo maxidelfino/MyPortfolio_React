@@ -1,3 +1,4 @@
+import React from 'react';
 import { Github, Preview } from "../Icons/Icons";
 
 const projectItems = [
